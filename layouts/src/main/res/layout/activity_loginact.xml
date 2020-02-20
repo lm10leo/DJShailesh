@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".loginact">
+    tools:context=".LoginActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edusername"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -57,11 +57,11 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:fontFamily="cursive"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintStart_toStartOf="@+id/edusername"
+        app:layout_constraintTop_toBottomOf="@+id/edusername" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edpassword"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
@@ -75,15 +75,28 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnLogIn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/log_in"
         android:textColor="#ffffff"
         android:background="@drawable/button_bckgrnd"
-        app:layout_constraintEnd_toEndOf="@+id/editText2"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintEnd_toEndOf="@+id/edpassword"
+        app:layout_constraintStart_toStartOf="@+id/edpassword"
+        app:layout_constraintTop_toBottomOf="@+id/edpassword" />
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="SignUp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogIn"
+        app:layout_constraintStart_toStartOf="@+id/btnLogIn"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogIn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
