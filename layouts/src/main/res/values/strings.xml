@@ -4,6 +4,9 @@
     <string name="middle_name">Middle Name</string>
     <string name="last_name">Last Name</string>
     <string name="d_o_b">DOB</string>
+    <string name="log_in">LogIn</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
 
 
 </resources>
