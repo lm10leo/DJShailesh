@@ -59,6 +59,7 @@
         />
 
         <EditText
+            android:id="@+id/edtFirstName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -81,6 +82,7 @@
         />
 
         <EditText
+            android:id="@+id/edtMiddleName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -101,6 +103,7 @@
 
         />
         <EditText
+            android:id="@+id/edtLastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
