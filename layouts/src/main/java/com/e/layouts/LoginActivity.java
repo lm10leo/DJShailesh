@@ -29,8 +29,14 @@ public class LoginActivity extends AppCompatActivity {
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Bundle bundle=new Bundle();
+                bundle.putString("callFrom","Done");
+
                 Intent intent=new Intent(LoginActivity.this,RegistrationActivity.class);
+                intent.putExtras(bundle);
                 startActivity(intent);
+
             }
         });
 
