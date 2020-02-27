@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -29,11 +30,18 @@ public class VersionsAdapter extends RecyclerView.Adapter<VersionsAdapter.Versio
     }
 
     @Override
-    public void onBindViewHolder(@NonNull VersionsHolder holder, int position)
-    {
+    public void onBindViewHolder(@NonNull VersionsHolder holder, final int position) {
 
         holder.getName().setText(list.get(position).getName());
         holder.getImage().setImageResource(list.get(position).getImage());
+        holder.getName().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, "position : " +position+
+                                "Name : " + list.get(position).getName(),
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
@@ -55,3 +63,5 @@ public class VersionsAdapter extends RecyclerView.Adapter<VersionsAdapter.Versio
         }
     }
 }
+
+
